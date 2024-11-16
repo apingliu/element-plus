@@ -10,6 +10,7 @@ const props: CascaderProps = {
   lazy: true,
   lazyLoad(node, resolve) {
     const { level } = node
+    console.log(level)
     setTimeout(() => {
       const nodes = Array.from({ length: level + 1 }).map((item) => ({
         value: ++id,
